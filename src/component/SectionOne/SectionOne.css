@@ -1,0 +1,125 @@
+.section-one-container{ 
+    padding: 2em;
+    height: fit-content;
+    max-width: 100%;
+    background-color: var(--veryPaleCyan);
+    background-image: url("../../assets/images/bg-hero-desktop.svg");
+}
+.section-one-header{ 
+    display: flex;
+    align-items: center;
+}
+.header-image img{ 
+    height: 25px;
+}
+.header-button{ 
+    margin-left: auto;
+    width: 10%;
+    /* height: 50px; */
+}
+.header-button button { 
+    background-color: white; 
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow:  1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+}
+
+.header-button button p{ 
+    color: var(--veryDarkCyan);
+    font-family: var(--headerFamily);
+}
+.header-content{ 
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
+}
+.header-text{ 
+    /* background-color: yellow; */
+    width: 80%;
+    height: fit-content;
+    margin-top: 3em;
+}
+.text-header{ 
+    width: 70%;
+    margin-bottom: 1.6em;
+    line-height: 2.7em;
+    font-family: var(--headerFamily);
+}
+.text{ 
+    /* background-color: palevioletred; */
+    line-height: 1.4em;
+    width: 100%;
+    font-family: var(--bodyTextFont);
+}
+.text-button{ 
+    
+    width: 40%;
+    margin-top: 1.5em;
+}
+.text-button button{ 
+    background-color: var(--pink); 
+    height: 38px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.header-button button:hover, .text-button button:hover{ 
+    opacity: 0.8; 
+}
+.text-button button p{ 
+    color: white;
+}
+.build-image-container{ 
+    /* background-color: yellow; */
+    width: 90%;
+    height: 350px;
+}
+.build-image-container img{ 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+@media only screen and (max-width: 600px) {
+    .section-one-container{ 
+        background-image: url("../../assets/images/bg-hero-mobile.svg");
+    }
+    .header-content{ 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header-button{ 
+        margin-left: auto;
+        width: 30%;
+        /* height: 50px; */
+    }
+    .header-text{ 
+        /* background-color: red; */
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text-header{ 
+        text-align: center;
+        /* background-color: green; */
+        font-size: 13px;
+        width: fit-content;
+    }
+    .text{ 
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+    .text-button{ 
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 2.2em;
+    }
+    .build-image-container{ 
+        /* background-color: purple; */
+        margin: 0 auto;
+        height: fit-content;
+    }
+}

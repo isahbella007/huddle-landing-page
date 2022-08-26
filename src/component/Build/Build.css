@@ -37,7 +37,7 @@
     font-family: var(--bodyTextFont);
     font-size: 14px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 100px) and (max-width:800px) {
     .build-card{ 
         width: 93%;
     }
